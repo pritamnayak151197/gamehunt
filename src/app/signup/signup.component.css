@@ -7,17 +7,41 @@ span{
     margin-bottom: 2%;
 }
 .login{
-    background-color: bisque;
-    margin: 10% 35% 10% 35%;
+    background-color: #fff;
+    margin: 2% 35% 10% 35%;
     padding: 5%;
     width: 30%;
     border-radius: 5%;
 }
 .logo{
-    text-align: center;
+    margin-left: 39%;
+    margin-bottom: 10%;
+    
+    color: #E63E6D ;
 }
 #login {
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px 18px #3b3a3b;
   }
+ 
+  @media only screen and (max-width: 600px) {
+    .login{
+        margin: 5% 4% 5% 3%;
+        padding: 3%;
+        width: 96%;
+    }
+    #login {
+        border: none;
+        box-shadow: none;
+      }
+  }
+
+
+  @media screen and (max-height: 633px) {
+    div.logo {
+        display: none !important; 
+    }
+  }
+
+  
