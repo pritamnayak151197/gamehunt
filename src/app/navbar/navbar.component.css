@@ -1,4 +1,12 @@
 span{
     color: brown;
-    
 }
+.user-icon{
+    margin-top: 3px;
+    margin-right: 0.5rem;
+}
+.user{
+    margin-top:3px ;
+    font-size: 1.2rem;
+}
+
