@@ -7,15 +7,17 @@ span{
     margin-bottom: 2%;
 }
 .login{
-    margin: 10% 35% 10% 35%;
+    background-color: #fff;
+    margin: 2% 35% 10% 35%;
     padding: 5%;
     width: 30%;
     border-radius: 5%;
 }
 .logo{
-    margin-left: 30%;
-    height: 200px;
-    width: 200px;
+    margin-left: 39%;
+    margin-bottom: 10%;
+    
+    color: #E63E6D ;
 }
 #login {
     border: 1px solid;
@@ -25,7 +27,7 @@ span{
  
   @media only screen and (max-width: 600px) {
     .login{
-        margin: 12% 4% 5% 3%;
+        margin: 5% 4% 5% 3%;
         padding: 3%;
         width: 96%;
     }
@@ -34,3 +36,12 @@ span{
         box-shadow: none;
       }
   }
+
+
+  @media screen and (max-height: 633px) {
+    div.logo {
+        display: none !important; 
+    }
+  }
+
+  
