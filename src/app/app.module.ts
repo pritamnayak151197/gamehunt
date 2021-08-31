@@ -13,6 +13,8 @@ import {CardModule} from 'primeng/card';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ButtonNavBarComponent } from './button-nav-bar/button-nav-bar.component';
 import { HostYourMatchComponent } from './host-your-match/host-your-match.component';
+import { FreeMatchesComponent } from './matches/free-matches/free-matches.component';
+import { PaidMatchesComponent } from './matches/paid-matches/paid-matches.component';
 
 
 
@@ -24,7 +26,9 @@ import { HostYourMatchComponent } from './host-your-match/host-your-match.compon
     AdminComponent,
     NavbarComponent,
     ButtonNavBarComponent,
-    HostYourMatchComponent
+    HostYourMatchComponent,
+    FreeMatchesComponent,
+    PaidMatchesComponent
   ],
   imports: [
     BrowserModule,
