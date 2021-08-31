@@ -1,0 +1,31 @@
+.hostYourMatch{
+        margin: 5% 35% 10% 35%;
+        padding: 3%;
+        width: 30%;
+}
+.header{
+    text-align: center;
+    margin-bottom: 2%;
+  
+}
+.logo{
+    margin: 10%;
+    margin-left: 39%;
+    margin-bottom: 10%;
+    
+    color: #E63E6D ;
+}
+
+@media only screen and (max-width: 600px) {
+    .hostYourMatch{
+        margin: 10% 4% 5% 3%;
+        padding: 3%;
+        width: 96%;
+    }
+}
+
+@media screen and (max-height: 633px) {
+    div.logo {
+        display: none !important; 
+    }
+  }
