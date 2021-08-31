@@ -15,9 +15,10 @@ span{
 }
 .logo{
     margin-left: 39%;
+    margin-top: 4rem;
     margin-bottom: 10%;
     
-    color: #E63E6D ;
+    color: red ;
 }
 #login {
     border: 1px solid;
