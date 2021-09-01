@@ -15,6 +15,7 @@ import { ButtonNavBarComponent } from './button-nav-bar/button-nav-bar.component
 import { HostYourMatchComponent } from './host-your-match/host-your-match.component';
 import { FreeMatchesComponent } from './matches/free-matches/free-matches.component';
 import { PaidMatchesComponent } from './matches/paid-matches/paid-matches.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -28,7 +29,8 @@ import { PaidMatchesComponent } from './matches/paid-matches/paid-matches.compon
     ButtonNavBarComponent,
     HostYourMatchComponent,
     FreeMatchesComponent,
-    PaidMatchesComponent
+    PaidMatchesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

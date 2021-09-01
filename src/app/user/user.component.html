@@ -6,7 +6,7 @@
           <img src="../../assets/images/squad.jpg" class="card-img-top" alt="squad">
           <div class="card-body">
             <h5 class="card-title">Free</h5>
-            <button pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
+            <button (click)="checkIfSignedUp('free')" pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
           </div>
         </div>        
       </div>
@@ -15,7 +15,7 @@
           <img src="../../assets/images/duo.jpg" class="card-img-top" alt="duo">
           <div class="card-body">
             <h5 class="card-title">Paid</h5>
-            <button pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
+            <button  (click)="checkIfSignedUp('paid')" pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
           </div>
         </div>        
       </div>
@@ -24,7 +24,7 @@
           <img src="../../assets/images/solo.jpeg" class="card-img-top" alt="solo">
           <div class="card-body">
             <h5 class="card-title">TDM</h5>
-            <button pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
+            <button routerLink="/tdm" pButton pRipple type="button" label="Register" class="p-button-rounded p-button-danger"></button>
           </div>
         </div>        
       </div>
@@ -33,7 +33,7 @@
           <img src="../../assets/images/host.jpg" class="card-img-top" alt="host">
           <div class="card-body">
             <h5 class="card-title">Host Your Match</h5>
-            <button pButton pRipple type="button" label="Host" class="p-button-rounded p-button-danger"></button>
+            <button  (click)="checkIfSignedUp('host')" pButton pRipple type="button" label="Host" class="p-button-rounded p-button-danger"></button>
           </div>
         </div>        
       </div> 
