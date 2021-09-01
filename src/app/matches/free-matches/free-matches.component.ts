@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { MatchDescription } from '../../Models/MatchDescription';
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-free-matches',
   templateUrl: './free-matches.component.html',
   styleUrls: ['./free-matches.component.css']
 })
 export class FreeMatchesComponent implements OnInit {
-  
+  signedUp: boolean=false;
   matches!: Array<MatchDescription>;
-  constructor() { }
+  constructor(private router:Router) { }
   ngOnInit(): void {
     
     this.matches=[
@@ -49,6 +50,14 @@ export class FreeMatchesComponent implements OnInit {
 
   }
   
+  checkIfSignedUp(){
+    if(this.signedUp==true){
+       this.router.navigate(['registerforfreematch']);
+    }
+    else{
+      this.router.navigate(['signup']);
+    }
+  }
   
 
 }

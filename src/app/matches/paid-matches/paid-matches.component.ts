@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PaidMatchDescription } from '../../Models/PaidMatchDescription';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-paid-matches',
@@ -7,12 +8,12 @@ import { PaidMatchDescription } from '../../Models/PaidMatchDescription';
   styleUrls: ['./paid-matches.component.css']
 })
 export class PaidMatchesComponent implements OnInit {
-  
+  signedUp: boolean=false;
   matches!: Array<PaidMatchDescription>;
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
-   
+  
     this.matches=[
       {
          imagePath:"https://cdn1.dotesports.com/wp-content/uploads/2020/09/02214210/new-erangel.jpg",
@@ -71,6 +72,15 @@ export class PaidMatchesComponent implements OnInit {
   ]
 
 
+  }
+
+  checkIfSignedUp(){
+    if(this.signedUp==true){
+       this.router.navigate(['registerforpaidmatch']);
+    }
+    else{
+      this.router.navigate(['signup']);
+    }
   }
 
 }
