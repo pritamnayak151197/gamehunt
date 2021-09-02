@@ -1,0 +1,61 @@
+.top-part{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    height: 6rem;
+    background-color: red;
+    border-radius: 30px;
+}
+.root-container{
+    margin: auto;
+    margin-top:3.8rem;
+    width: 97%;
+}
+
+.name{
+    padding: 1rem;
+    
+}
+.logout{
+    margin-top: .3rem;
+    font-size: 1.1rem;
+    float: right;
+    color: white;
+}
+.profile-pic{
+    color: white;
+    float: left;
+    font-size: 3rem;
+    margin-top: 0.3rem;
+}
+.profile-name{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: .5rem;
+}
+.edit-profile{
+    margin-left: .5rem;
+    color: white;
+}
+.bottom-part{
+    height: 60vh;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    padding: 7% 7% ;
+}
+.profile{
+    margin-top: .4rem;
+    margin-right: .5rem;
+    font-size: 2.2rem;
+    float: left;
+}
+.profile-title{
+    font-size: 1rem;
+}
+.profile-fullname{
+    font-size: 1.1rem;
+    padding: 0px;
+}
+.details{
+     margin-bottom: 1rem;
+}

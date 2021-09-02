@@ -16,6 +16,8 @@ import { HostYourMatchComponent } from './host-your-match/host-your-match.compon
 import { FreeMatchesComponent } from './matches/free-matches/free-matches.component';
 import { PaidMatchesComponent } from './matches/paid-matches/paid-matches.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile/profile.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 
 
 
@@ -30,7 +32,9 @@ import { LoginComponent } from './login/login.component';
     HostYourMatchComponent,
     FreeMatchesComponent,
     PaidMatchesComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
