@@ -4,6 +4,7 @@ import { HostYourMatchComponent } from './host-your-match/host-your-match.compon
 import { LoginComponent } from './login/login.component';
 import { FreeMatchesComponent } from './matches/free-matches/free-matches.component';
 import { PaidMatchesComponent } from './matches/paid-matches/paid-matches.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'tdm',redirectTo:'home'},
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
-  {path:'profile',component:ProfileComponent}
+  {path:'profile',component:ProfileComponent},
+  {path:'editprofile',component:EditProfileComponent}
 ];
 
 @NgModule({

@@ -4,37 +4,44 @@
             <div class="col-12 top-part">
                 <div class="name">
                     <span><i class="fas fa-user-circle profile-pic"></i></span>
-                    <span class="profile-name">{{userDetails.name}}</span>    
-                    <span class="logout">Log out</span><br>
-                    <span class="edit-profile">Edit profile</span>
+                    <span class="profile-name text">{{userDetails.name}}</span>    
+                    <span class="logout text">Log out</span><br>
+                    <span class="edit-profile text" (click)="loadEditProfile()">Edit profile</span>
                 </div>
             </div>
             <div class="col-12 bottom-part">
                <div class="row">
                  <div class="col-12 details">
                     <span><i class="fas fa-user-alt profile"></i></span>
-                    <span class="profile-title">User Name</span><br>
+                    <span class="profile-title text">User Name</span><br>
                     <span class="profile-fullname">{{userDetails.userName}}</span>
                  </div>
                  <div class="col-12 details">
                     <span><i class="fas fa-envelope profile"></i></span>
-                    <span class="profile-title">Email</span><br>
+                    <span class="profile-title text">Email</span><br>
                     <span class="profile-fullname">{{userDetails.email}}</span>
                  </div>
                  <div class="col-12 details">
                     <span><i class="fas fa-lock profile"></i></span>
-                    <span class="profile-title">Password</span><br>
+                    <span class="profile-title text">Password</span><br>
                     <span class="profile-fullname">{{userDetails.password}}</span>
                  </div>
                  <div class="col-12 details">
                     <span><i class="fas fa-phone-square-alt profile"></i></span>
-                    <span class="profile-title">Mobile number</span><br>
+                    <span class="profile-title text">Mobile number</span><br>
                     <span class="profile-fullname">{{userDetails.phoneNumber}}</span>
                  </div>
-                 <div class="col-12 details">
+                 <div class="col-12 details" style="max-width: 300px;">
                     <span><i class="fas fa-users profile"></i></span>
-                    <span class="profile-title">Team</span><br>
-                    <span class="profile-fullname">{{teamString}}</span>
+                    <span class="profile-title text team">Team</span><br>
+                    <div class="players">
+                     <ol>
+                        <li> <span class="profile-fullname">{{userDetails.team[0]}}</span> </li>
+                        <li> <span class="profile-fullname">{{userDetails.team[1]}}</span> </li>
+                        <li> <span class="profile-fullname">{{userDetails.team[2]}}</span> </li>
+                        <li> <span class="profile-fullname">{{userDetails.team[3]}}</span> </li>
+                     </ol>
+                    </div>
                  </div>
                </div>
             </div>

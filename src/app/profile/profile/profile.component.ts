@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDetails } from 'src/app/Models/UserDetails';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -8,7 +9,7 @@ import { UserDetails } from 'src/app/Models/UserDetails';
 export class ProfileComponent implements OnInit {
   userDetails=new UserDetails();
   teamString:string="";
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     this.userDetails.email="pritamnayak@gmail.com";
@@ -18,8 +19,12 @@ export class ProfileComponent implements OnInit {
     this.userDetails.phoneNumber="9778222339";
     this.userDetails.team=["Pritam","Rajesh","Alok","Vishal"];
     for(let i=0;i<this.userDetails.team.length;i++){
-        this.teamString+=this.userDetails.team[i]+" ";
+        this.teamString+=this.userDetails.team[i]+" "+" ";
     }
   }
+   
+   loadEditProfile(){
+     this.router.navigate(['editprofile']);
+   }
 
 }
