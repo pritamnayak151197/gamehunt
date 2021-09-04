@@ -18,6 +18,7 @@ import { PaidMatchesComponent } from './matches/paid-matches/paid-matches.compon
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 
@@ -34,7 +35,8 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
     PaidMatchesComponent,
     LoginComponent,
     ProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
