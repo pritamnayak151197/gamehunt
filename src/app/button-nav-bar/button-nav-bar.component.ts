@@ -16,4 +16,7 @@ export class ButtonNavBarComponent implements OnInit {
     this.router.navigate(['profile']);
   }
 
+  loadAboutUs(){
+    this.router.navigate(['aboutus']);
+  }
 }

@@ -8,6 +8,7 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
 import { ProfileComponent } from './profile/profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch: 'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'editprofile',component:EditProfileComponent}
+  {path:'editprofile',component:EditProfileComponent},
+  {path:'aboutus', component:AboutusComponent}
 ];
 
 @NgModule({
