@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AgGridModule } from 'ag-grid-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,8 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { RanksComponent } from './ranks/ranks.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 
 
@@ -36,7 +39,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     LoginComponent,
     ProfileComponent,
     EditProfileComponent,
-    AboutusComponent
+    AboutusComponent,
+    RanksComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     InputTextModule,
     FormsModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { RanksComponent } from './ranks/ranks.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch: 'full'},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'profile',component:ProfileComponent},
   {path:'editprofile',component:EditProfileComponent},
-  {path:'aboutus', component:AboutusComponent}
+  {path:'aboutus', component:AboutusComponent},
+  {path:'rank', component:RanksComponent}
 ];
 
 @NgModule({
