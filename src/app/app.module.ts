@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import {DialogModule} from 'primeng/dialog';
 
 
 
@@ -44,7 +45,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     InputTextModule,
     FormsModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
