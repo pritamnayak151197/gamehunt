@@ -17,3 +17,6 @@
 .description{
     text-align: left;
 }
+.card-body{
+    background-color: rgb(168, 131, 197)
+}
